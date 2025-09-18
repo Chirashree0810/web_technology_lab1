@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Welcome to My Homepage</title>
+<link id="pagestyle" rel="stylesheet" href="style1.css" />
+<script>
+  function setStyleSheet(sheet) {
+    document.getElementById('pagestyle').setAttribute('href', sheet);
+  }
+</script>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to My Homepage</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </div>
+
+  <div class="container">
+    <div class="menu">
+      <button onclick="setStyleSheet('style1.css')">Stylesheet 1</button>
+      <button onclick="setStyleSheet('style2.css')">Stylesheet 2</button>
+      <button onclick="setStyleSheet('style3.css')">Stylesheet 3</button>
+      <button onclick="setStyleSheet('style4.css')">Stylesheet 4</button>
+      <button onclick="setStyleSheet('nostyle.css')">No Stylesheet</button>
+    </div>
+
+    <div class="main">
+      <h2>Same Page Different Stylesheets</h2>
+      <p>
+        This is a demonstration of how different stylesheets can change the layout of your HTML page.
+        You can change the layout of this page by selecting different stylesheets in the menu, or by
+        selecting one of the following links:
+        <a href="#" onclick="setStyleSheet('style1.css')">Stylesheet1</a>,
+        <a href="#" onclick="setStyleSheet('style2.css')">Stylesheet2</a>,
+        <a href="#" onclick="setStyleSheet('style3.css')">Stylesheet3</a>,
+        <a href="#" onclick="setStyleSheet('style4.css')">Stylesheet4</a>.
+      </p>
+
+      <h3>No Styles</h3>
+      <p>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how
+        the page looks like with no stylesheet:
+        <a href="#" onclick="setStyleSheet('nostyle.css')">No Stylesheet</a>.
+      </p>
+    </div>
+
+    <div class="sidebar">
+      <h3>Side-Bar</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+        laoreet dolore magna aliquam erat volutpat.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>
+<h1>CHIRASHREE-4MW23CS031</h1>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+      laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+      in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+      vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+      dolore te feugait nulla facilisi.
+    </p>
+  </div>
+</body>
+</html>
