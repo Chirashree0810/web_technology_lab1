@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackotsava 2025 - Registration Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #333;
+      margin: 0;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h3 {
+      text-align: center;
+      color: #f4f4f4;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 70%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    th {
+      background-color: #2a5298;
+      color: white;
+      text-align: left;
+      padding: 15px;
+      font-size: 20px;
+    }
+    td {
+      padding: 20px;
+      font-size: 16px;
+      color: #444;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: #2a5298;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.3s ease;
+      margin: 10px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #1e3c72;
+    }
+    .radio, .checkbox {
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hackotsava 2025</h1>
+  <h3>National Level Hackathon by SMVITM College</h3>
+
+  <form action="#" method="post">
+    <table>
+      <tr>
+        <th colspan="2">Team Information</th>
+      </tr>
+      <tr>
+        <td>Team Name:</td>
+        <td><input type="text" name="teamname" placeholder="Enter your team name" required></td>
+      </tr>
+      <tr>
+        <td>Team Leader Name:</td>
+        <td><input type="text" name="leadername" placeholder="Enter team leader's full name" required></td>
+      </tr>
+      <tr>
+        <td>Leader Email:</td>
+        <td><input type="email" name="leaderemail" placeholder="Enter team leader's email" required></td>
+      </tr>
+      <tr>
+        <td>Leader Contact Number:</td>
+        <td><input type="tel" name="leaderphone" placeholder="Enter contact number" required></td>
+      </tr>
+      <tr>
+        <td>Institution Name:</td>
+        <td><input type="text" name="institution" placeholder="Enter your college/institution name" required></td>
+      </tr>
+      <tr>
+        <td>Number of Team Members:</td>
+        <td>
+          <select name="members" required>
+            <option value="">Select</option>
+            <option value="2">2 Members</option>
+            <option value="3">3 Members</option>
+            <option value="4">4 Members</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Hackathon Details</th>
+      </tr>
+      <tr>
+        <td>Track/Domain:</td>
+        <td>
+          <select name="domain" required>
+            <option value="">Select a domain</option>
+            <option value="ai">Artificial Intelligence / Machine Learning</option>
+            <option value="web">Web Development</option>
+            <option value="app">App Development</option>
+            <option value="iot">IoT / Embedded Systems</option>
+            <option value="cyber">Cybersecurity</option>
+            <option value="blockchain">Blockchain / FinTech</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Technical Skills:</td>
+        <td>
+          <input type="checkbox" name="skills" value="python" class="checkbox"> Python
+          <input type="checkbox" name="skills" value="java" class="checkbox"> Java
+          <input type="checkbox" name="skills" value="html" class="checkbox"> HTML/CSS/JS
+          <input type="checkbox" name="skills" value="react" class="checkbox"> React
+          <input type="checkbox" name="skills" value="arduino" class="checkbox"> Arduino/IoT
+        </td>
+      </tr>
+      <tr>
+        <td>Project Idea (Brief Description):</td>
+        <td><textarea name="idea" placeholder="Describe your project idea briefly" required></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <input type="submit" value="Register">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
